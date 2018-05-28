@@ -16,16 +16,19 @@ h2,
 h3,
 p,
 span,
-button {
+button,
+a {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    text-decoration: none;
+    color: #111;
 }
 
 .sombra {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-button{
+.button{
     padding: 8px 25px;
     border-radius: 100px;
     border: none;
@@ -87,8 +90,8 @@ body{
             justify-content: space-around;
             position: relative;
             z-index: 1000;
-            h2 {
-                padding: 3px 20px 15px;
+            a {
+                padding: 15px 20px 15px;
                 color: #ccc;
                 font-weight: 500;
                 font-size: 1em;
@@ -156,17 +159,17 @@ body{
                     }
                 }
                 .uno {
-                    button{
+                    .button{
                         background: $violeta;
                     }
                 }
                 .dos {
-                    button{
+                    .button{
                         background: $amarillo;
                     }
                 }
                 .tres {
-                    button{
+                    .button{
                         background: $rojo;
                     }
                 }

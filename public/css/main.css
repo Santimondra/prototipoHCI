@@ -12,16 +12,19 @@ h2,
 h3,
 p,
 span,
-button {
+button,
+a {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  text-decoration: none;
+  color: #111;
 }
 
 .sombra {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-button {
+.button {
   padding: 8px 25px;
   border-radius: 100px;
   border: none;
@@ -34,11 +37,11 @@ button {
   transition: all 0.15s ease;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
 }
 
-button:active {
+.button:active {
   cursor: pointer;
   box-shadow: 0 2px 2px #bbb;
 }
@@ -95,15 +98,15 @@ body .app .navBar {
   z-index: 1000;
 }
 
-body .app .navBar h2 {
-  padding: 3px 20px 15px;
+body .app .navBar a {
+  padding: 15px 20px 15px;
   color: #ccc;
   font-weight: 500;
   font-size: 1em;
   transition: all 0.15s ease;
 }
 
-body .app .navBar h2:hover {
+body .app .navBar a:hover {
   cursor: pointer;
   border-bottom: solid 2px #111;
   color: #111;
@@ -176,15 +179,15 @@ body .app .content .restaurante .mascara article .logo {
   margin-bottom: 15px;
 }
 
-body .app .content .restaurante .uno button {
+body .app .content .restaurante .uno .button {
   background: #6900ff;
 }
 
-body .app .content .restaurante .dos button {
+body .app .content .restaurante .dos .button {
   background: #fbae17;
 }
 
-body .app .content .restaurante .tres button {
+body .app .content .restaurante .tres .button {
   background: #ef4552;
 }
 
