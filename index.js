@@ -13,7 +13,7 @@ app.set("view engine", "hbs");
 
 app.use(express.static("public")); 
 
-app.listen(5000, console.log("Server iniciado"));
+app.listen(process.env.PORT || 5000, console.log("Server iniciado"));
 
 /*MongoClient.connect("mongodb://localhost:27017", (err, client) => {
     if(err) throw err;
