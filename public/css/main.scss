@@ -9,6 +9,7 @@ article {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 h1,
@@ -124,7 +125,7 @@ body{
             position: relative;
             z-index: 1000;
             a {
-                padding: 25px 20px 12px;
+                padding: 25px 20px 15px;
                 color: #ccc;
                 font-weight: 600;
                 font-size: 1.2em;
@@ -258,6 +259,110 @@ body{
                     background: $rojo;
                 }
             }
+            .title{
+                padding-top: $margen;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                align-content: center;
+                img {
+                    width: 5%;
+                    margin-top: $margen;
+                    margin-left: -5px;
+                    align-self: flex-start;
+                }
+                .logo {
+                    width: 30%;
+                    margin: 0;
+                }
+                span{
+                    margin-top: $margen;
+                    align-self: flex-start;
+                    color: $rojo;
+                    font-weight: 500;
+                    
+                }
+                div {
+                    flex: 55% 0 1;
+                    margin-left: $margen;
+                    h1, h2, p{
+                        margin: 0;
+                    }
+                    h1{
+                        font-size: 2em;
+                    }
+                    h2 {
+                        font-size: 1.4em;
+                    }
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+            .separador {
+                width: 120%;
+                height: 2px;
+                background: #eee;
+                margin-left: -10%;
+                margin-top: $margen;
+            }
+            .menu {
+                height: 40%;
+                margin-top: 35px;
+                &:first-child{
+                    margin-top: -10px;
+                }
+                .platos{
+                    padding: $margen;
+                    widows: 100%;
+                    height: 40%;
+                    margin-bottom: $margen;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    align-content: center;
+                    .imgPlato {
+                        widows: 15%;
+                        height: 100%;
+                        margin-left: $margen*.5;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+                        flex: 20% 0 1;
+                        .buttonDos{
+                            margin-top: 30px;
+                            background: $amarillo;
+                        }
+                        h2{
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-size: 1em;
+                        }
+                    }
+                    .info{
+                        align-items: flex-start;
+                        flex: 60% 0 1;
+                        margin-left: 5%;
+                        h1{
+                            font-size: 1.8em;
+                            margin-top: -5px;
+                            margin-bottom: 5px;
+                        }
+                        span{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .grande {
+            height: 90vh;
         }
     }
 }

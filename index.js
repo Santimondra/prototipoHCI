@@ -29,3 +29,8 @@ app.get("/:id", (req, res) => {
     var ruta = req.params.id+"";
     res.render(ruta);
 });
+
+app.get("/categorias/:id", (req, res) => {
+    var ruta = req.params.id+"";
+    res.render(ruta);
+}); 

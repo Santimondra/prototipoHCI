@@ -5,6 +5,7 @@ article {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 h1,
@@ -135,7 +136,7 @@ body .app .navBar {
 }
 
 body .app .navBar a {
-  padding: 25px 20px 12px;
+  padding: 25px 20px 15px;
   color: #ccc;
   font-weight: 600;
   font-size: 1.2em;
@@ -281,6 +282,129 @@ body .app .content .categoria .dos {
 
 body .app .content .categoria .tres {
   background: #ef4552;
+}
+
+body .app .content .title {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+body .app .content .title img {
+  width: 5%;
+  margin-top: 15px;
+  margin-left: -5px;
+  align-self: flex-start;
+}
+
+body .app .content .title .logo {
+  width: 30%;
+  margin: 0;
+}
+
+body .app .content .title span {
+  margin-top: 15px;
+  align-self: flex-start;
+  color: #ef4552;
+  font-weight: 500;
+}
+
+body .app .content .title div {
+  flex: 55% 0 1;
+  margin-left: 15px;
+}
+
+body .app .content .title div h1, body .app .content .title div h2, body .app .content .title div p {
+  margin: 0;
+}
+
+body .app .content .title div h1 {
+  font-size: 2em;
+}
+
+body .app .content .title div h2 {
+  font-size: 1.4em;
+}
+
+body .app .content .title div p {
+  font-size: 1em;
+}
+
+body .app .content .separador {
+  width: 120%;
+  height: 2px;
+  background: #eee;
+  margin-left: -10%;
+  margin-top: 15px;
+}
+
+body .app .content .menu {
+  height: 40%;
+  margin-top: 35px;
+}
+
+body .app .content .menu:first-child {
+  margin-top: -10px;
+}
+
+body .app .content .menu .platos {
+  padding: 15px;
+  widows: 100%;
+  height: 40%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+body .app .content .menu .platos .imgPlato {
+  widows: 15%;
+  height: 100%;
+  margin-left: 7.5px;
+}
+
+body .app .content .menu .platos div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex: 20% 0 1;
+}
+
+body .app .content .menu .platos div .buttonDos {
+  margin-top: 30px;
+  background: #fbae17;
+}
+
+body .app .content .menu .platos div h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
+}
+
+body .app .content .menu .platos .info {
+  align-items: flex-start;
+  flex: 60% 0 1;
+  margin-left: 5%;
+}
+
+body .app .content .menu .platos .info h1 {
+  font-size: 1.8em;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+body .app .content .menu .platos .info span {
+  font-size: .8em;
+}
+
+body .app .grande {
+  height: 90vh;
 }
 
 @media only screen and (max-width: 900px) {
