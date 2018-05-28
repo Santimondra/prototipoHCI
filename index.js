@@ -24,3 +24,8 @@ app.listen(process.env.PORT || 5000, console.log("Server iniciado"));
 app.get("/", (req, res) => {
     res.render('index');
 });
+
+app.get("/:id", (req, res) => {
+    var ruta = req.params.id+"";
+    res.render(ruta);
+});
