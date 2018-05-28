@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800");
+section,
+div,
+article {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.sombra {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 8px 25px;
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 0.95em;
+  background: #fff;
+  box-shadow: 0 4px 10px #bbb;
+  outline: none;
+  color: #fff;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  cursor: pointer;
+  box-shadow: 0 2px 2px #bbb;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  background: #777;
+  overflow: hidden;
+  padding: 10px;
+}
+
+body .app {
+  box-sizing: border-box;
+  width: 450px;
+  background: #fff;
+  border: solid 10px #111;
+  border-radius: 10px;
+}
+
+body .app .appBar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2000;
+}
+
+body .app .appBar img {
+  height: 20px;
+}
+
+body .app .appBar img:hover {
+  cursor: pointer;
+}
+
+body .app .navBar {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1000;
+}
+
+body .app .navBar h2 {
+  padding: 3px 20px 15px;
+  color: #ccc;
+  font-weight: 500;
+  font-size: 1em;
+  transition: all 0.15s ease;
+}
+
+body .app .navBar h2:hover {
+  cursor: pointer;
+  border-bottom: solid 2px #111;
+  color: #111;
+}
+
+body .app .navBar .activo {
+  border-bottom: solid 2px #111;
+  color: #111;
+}
+
+body .app .content {
+  width: 100%;
+  height: 80vh;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+body .app .content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eee;
+}
+
+body .app .content::-webkit-scrollbar {
+  width: 8px;
+  background-color: #eee;
+}
+
+body .app .content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 40px;
+}
+
+body .app .content .restaurante {
+  widows: 100%;
+  height: 35%;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+body .app .content .restaurante .banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .app .content .restaurante .mascara {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.7) 40%, white 60%);
+}
+
+body .app .content .restaurante .mascara article {
+  margin-right: 10%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+body .app .content .restaurante .mascara article .logo {
+  width: 110px;
+  margin-bottom: 15px;
+}
+
+body .app .content .restaurante .uno button {
+  background: #6900ff;
+}
+
+body .app .content .restaurante .dos button {
+  background: #fbae17;
+}
+
+body .app .content .restaurante .tres button {
+  background: #ef4552;
+}
+
+body .app .content .restaurante:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body .app {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */
