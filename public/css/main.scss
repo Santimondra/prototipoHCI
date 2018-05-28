@@ -9,7 +9,6 @@ article {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 h1,
@@ -145,6 +144,7 @@ body{
             width: 100%;
             height: 83vh;
             padding: $margen;
+            overflow: hidden;
             overflow-y: scroll;
             &::-webkit-scrollbar-track {
                 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
