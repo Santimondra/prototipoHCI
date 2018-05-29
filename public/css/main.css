@@ -95,7 +95,8 @@ body {
 
 body .app {
   box-sizing: border-box;
-  width: 450px;
+  margin-top: -10px;
+  width: 600px;
   background: #fff;
 }
 
@@ -407,7 +408,7 @@ body .app .grande {
   height: 90vh;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (width: 600px) {
   body {
     padding: 0;
     margin: 0;
