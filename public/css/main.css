@@ -494,7 +494,7 @@ body .app .content .pedido .contenido {
 }
 
 body .app .content .pedido .contenido .adiciones {
-  flex: 60% 0 1;
+  flex: 62% 0 1;
   margin: 0;
 }
 
@@ -584,7 +584,7 @@ body .app .content .pedido .contenido .adiciones .opciones ul li label .check:af
 }
 
 body .app .content .pedido .contenido .acciones {
-  flex: 40% 0 1;
+  flex: 38% 0 1;
   margin: 0;
   margin-left: 15px;
   display: flex;
