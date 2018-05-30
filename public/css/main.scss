@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800');
+@import url('https://fonts.googleapis.com/css?family=Muli:200i,300i,400i,600i,700,800');
 $amarillo: #fbae17;
 $violeta: #6900ff;
 $rojo: #ef4552;
@@ -28,7 +29,7 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.button{
+.button {
     padding: 12px 30px;
     border-radius: 100px;
     border: none;
@@ -39,16 +40,16 @@ a {
     outline: none;
     color: #fff;
     transition: all 0.15s ease;
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
-    &:active{
+    &:active {
         cursor: pointer;
         box-shadow: 0 2px 2px #bbb;
     }
 }
 
-.buttonDos{
+.buttonDos {
     width: 40px;
     height: 40px;
     border-radius: 100px;
@@ -64,22 +65,22 @@ a {
     align-content: center;
     align-items: center;
     justify-content: center;
-    &:hover{
-        cursor: pointer;        
-        box-shadow: 0 2px 2px #bbb;
-    }
-    &:active{
+    &:hover {
         cursor: pointer;
         box-shadow: 0 2px 2px #bbb;
     }
-    img{
+    &:active {
+        cursor: pointer;
+        box-shadow: 0 2px 2px #bbb;
+    }
+    img {
         width: 50%;
         margin-top: -1px;
         margin-left: 3px;
     }
 }
 
-body{
+body {
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -89,7 +90,7 @@ body{
     margin: 0;
     background: #777;
     overflow: hidden;
-    .app{
+    .app {
         box-sizing: border-box;
         width: 700px;
         background: #fff;
@@ -102,12 +103,12 @@ body{
             justify-content: space-around;
             position: relative;
             z-index: 2000;
-            h1{
+            h1 {
                 font-size: 1.7em;
             }
             img {
                 height: 20px;
-                &:hover{
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -128,7 +129,7 @@ body{
                 font-weight: 600;
                 font-size: 1.2em;
                 transition: all 0.15s ease;
-                &:hover{
+                &:hover {
                     cursor: pointer;
                     border-bottom: solid 3px #111;
                     color: #111;
@@ -192,17 +193,17 @@ body{
                     }
                 }
                 .uno {
-                    .button{
+                    .button {
                         background: $violeta;
                     }
                 }
                 .dos {
-                    .button{
+                    .button {
                         background: $amarillo;
                     }
                 }
                 .tres {
-                    .button{
+                    .button {
                         background: $rojo;
                     }
                 }
@@ -210,8 +211,7 @@ body{
                     margin-bottom: 0;
                 }
             }
-
-            .categoria{
+            .categoria {
                 widows: 100%;
                 height: 20%;
                 margin-bottom: $margen;
@@ -221,33 +221,29 @@ body{
                 align-items: center;
                 justify-content: flex-start;
                 align-content: center;
-
                 &:last-child {
                     margin-bottom: 0;
                 }
-
                 .imgCategoria {
                     flex: 20% 0 1;
                     height: 85%;
                     margin-left: $margen;
                 }
-
-                div{
+                div {
                     display: flex;
                     flex-direction: column;
                     align-content: center;
                     flex: 60% 0 1;
                     margin-left: 5%;
-                    h2{
+                    h2 {
                         font-size: 1.8em;
                         margin-top: -5px;
                         margin-bottom: 5px;
                     }
-                    span{
+                    span {
                         font-size: 1em;
                     }
                 }
-
                 .uno {
                     background: $violeta;
                 }
@@ -258,7 +254,7 @@ body{
                     background: $rojo;
                 }
             }
-            .title{
+            .title {
                 padding-top: $margen;
                 display: flex;
                 align-items: center;
@@ -273,27 +269,29 @@ body{
                 .logo {
                     width: 30%;
                     margin: 0;
+                    align-self: center;
                 }
-                span{
+                span {
                     margin-top: $margen;
                     align-self: flex-start;
                     color: $rojo;
                     font-weight: 500;
-                    
                 }
                 div {
                     flex: 55% 0 1;
                     margin-left: $margen;
-                    h1, h2, p{
+                    h1,
+                    h2,
+                    p {
                         margin: 0;
                     }
-                    h1{
+                    h1 {
                         font-size: 2em;
                     }
                     h2 {
                         font-size: 1.4em;
                     }
-                    p{
+                    p {
                         font-size: 1em;
                     }
                 }
@@ -308,10 +306,10 @@ body{
             .menu {
                 height: 40%;
                 margin-top: 35px;
-                &:first-child{
+                &:first-child {
                     margin-top: -10px;
                 }
-                .platos{
+                .platos {
                     padding: $margen;
                     widows: 100%;
                     height: 40%;
@@ -327,37 +325,349 @@ body{
                         height: 100%;
                         margin-left: $margen*.5;
                     }
-                    div{
+                    div {
                         display: flex;
                         flex-direction: column;
                         align-content: center;
                         align-items: center;
                         justify-content: center;
                         flex: 20% 0 1;
-                        .buttonDos{
+                        .buttonDos {
                             margin-top: 30px;
                             background: $amarillo;
                         }
-                        h2{
-                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        h2 {
+                            font-family: 'Muli', sans-serif;
+                            font-weight: 600i;
                             font-size: 1em;
                         }
                     }
-                    .info{
+                    .info {
                         align-items: flex-start;
                         flex: 60% 0 1;
                         margin-left: 5%;
-                        h1{
+                        h1 {
                             font-size: 1.8em;
                             margin-top: -5px;
                             margin-bottom: 5px;
                         }
-                        span{
+                        span {
                             font-size: .8em;
                         }
                     }
                 }
             }
+            .pedido {
+                .platos {
+                    padding: $margen;
+                    padding-bottom: 0;
+                    widows: 100%;
+                    height: 40%;
+                    margin-bottom: $margen;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    align-content: center;
+                    margin: 0;
+                    .imgPlato {
+                        widows: 15%;
+                        height: 100%;
+                        width: 20%;
+                        margin-left: $margen*.5;
+                    }
+                    .info {
+                        align-items: flex-start;
+                        flex: 80% 0 1;
+                        margin-left: 5%;
+                        h1 {
+                            font-size: 1.8em;
+                            margin-top: -5px;
+                            margin-bottom: 5px;
+                        }
+                        span {
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .contenido {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-content: flex-start;
+                    align-items: flex-start;
+                    padding: $margen;
+                    .adiciones {
+                        flex: 65% 0 1;
+                        margin: 0;
+                        h1 {
+                            margin-top: 0;
+                            margin-bottom: $margen;
+                        }
+                        .opciones {
+                            ul {
+                                list-style: none;
+                                padding: 0 $margen;
+                                margin: 0;
+                                li {
+                                    display: flex;
+                                    align-content: center;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    padding: $margen*.7 0;
+                                    h1 {
+                                        margin: 0;
+                                        flex: 50% 0 1;
+                                        font-size: 1.1em;
+                                    }
+                                    span {
+                                        flex: 35%;
+                                        font-family: 'Muli', sans-serif;
+                                        font-weight: 300;
+                                        font-size: .8em;
+                                        color: #333;
+                                    }
+                                    label {
+                                        position: relative;
+                                        cursor: pointer;
+                                        font-size: 22px;
+                                        input {
+                                            opacity: 0;
+                                            cursor: pointer;
+                                        }
+                                        .check {
+                                            position: absolute;
+                                            top: 0;
+                                            left: -5px;
+                                            height: 20px;
+                                            width: 21px;
+                                            border-radius: 25px;
+                                            border: solid 4px $amarillo;
+                                            background-color: #fff;
+                                        }
+                                        &:hover input~.check {
+                                            background-color: $amarillo;
+                                        }
+                                        input:checked~.check {
+                                            background-color: $amarillo;
+                                        }
+                                        .check:after {
+                                            content: "";
+                                            position: absolute;
+                                            display: none;
+                                        }
+                                        input:checked~.check:after {
+                                            display: block;
+                                        }
+                                        .check:after {
+                                            left: 7px;
+                                            top: 2px;
+                                            width: 5px;
+                                            height: 10px;
+                                            border: solid white;
+                                            border-width: 0 3px 3px 0;
+                                            -webkit-transform: rotate(45deg);
+                                            -ms-transform: rotate(45deg);
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .acciones {
+                        flex: 35% 0 1;
+                        margin: 0;
+                        margin-left: $margen;
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+                        justify-content: flex-start;
+                        .combo {
+                            width: 100%;
+                            padding-top: 100%;
+                            position: relative;
+                            transition: all 0.2s ease;
+                            div {
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column-reverse;
+                                align-content: center;
+                                align-items: center;
+                                justify-content: center;
+                                padding: $margen;
+                                img {
+                                    width: 70%;
+                                    margin-top: $margen;
+                                }
+                                h1 {
+                                    font-size: 1.2em;
+                                    color: $amarillo;
+                                    margin: 0;
+                                    margin-top: $margen;
+                                    font-weight: 700;
+                                }
+                            }
+                            &:hover {
+                                background: $amarillo;
+                                cursor: pointer;
+                                a {
+                                    div {
+                                        img {
+                                            filter: brightness(100);
+                                        }
+                                        h1 {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .comboSelected {
+                            background: $amarillo;
+                            cursor: pointer;
+                            a {
+                                div {
+                                    img {
+                                        filter: brightness(100);
+                                    }
+                                    h1 {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .finalizar {
+                            width: 100%;
+                            padding-top: 100%;
+                            position: relative;
+                            margin-top: $margen;
+                            position: relative;
+                            div {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-content: center;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                transition: all 0.2s ease;
+                                h1,
+                                p {
+                                    margin: 0;
+                                    color: #00af00
+                                }
+                                p {
+                                    font-size: 1em;
+                                    font-weight: 600;
+                                }
+                                h1 {
+                                    font-family: 'Muli', sans-serif;
+                                    font-weight: 800;
+                                    font-size: 1.8em;
+                                }
+                                &:hover {
+                                    cursor: pointer;
+                                    background: #00af00;
+                                    h1,
+                                    p {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .opcionesCombo {
+                    padding: $margen;
+                    display: flex;
+                    align-content: center;
+                    justify-content: flex-start;
+                    .titulo {
+                        margin: 0;
+                        margin-bottom: $margen;
+                    }
+                        .bebida {
+                            flex: 50% 0 1;
+                            
+                        }
+                        .acompanamiento {
+                            flex: 50% 0 1;
+                            margin-left: $margen;
+                        }
+                        article {
+                            .opciones{
+                                ul {
+                                    list-style: none;
+                                    padding: 0 $margen;
+                                    margin: 0;
+                                    li {
+                                        display: flex;
+                                        align-content: center;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        padding: $margen*.7 0;
+                                        h1 {
+                                            margin: 0;
+                                            flex: 90% 0 1;
+                                            font-size: 1.1em;
+                                        }
+                                        
+                                        label {
+                                            position: relative;
+                                            cursor: pointer;
+                                            font-size: 22px;
+                                            input {
+                                                opacity: 0;
+                                                cursor: pointer;
+                                            }
+                                            .check {
+                                                position: absolute;
+                                                top: 0;
+                                                left: -5px;
+                                                height: 20px;
+                                                width: 21px;
+                                                border-radius: 25px;
+                                                border: solid 4px $amarillo;
+                                                background-color: #fff;
+                                            }
+                                            &:hover input~.check {
+                                                background-color: $amarillo;
+                                            }
+                                            input:checked~.check {
+                                                background-color: $amarillo;
+                                            }
+                                            .check:after {
+                                                content: "";
+                                                position: absolute;
+                                                display: none;
+                                            }
+                                            input:checked~.check:after {
+                                                display: block;
+                                            }
+                                            .check:after {
+                                                left: 7px;
+                                                top: 2px;
+                                                width: 5px;
+                                                height: 10px;
+                                                border: solid white;
+                                                border-width: 0 3px 3px 0;
+                                                -webkit-transform: rotate(45deg);
+                                                -ms-transform: rotate(45deg);
+                                                transform: rotate(45deg);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
         }
         .grande {
             height: 90vh;
