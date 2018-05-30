@@ -36,7 +36,7 @@ a {
     font-weight: 700;
     font-size: 1.1em;
     background: #fff;
-    box-shadow: 0 4px 10px #bbb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     outline: none;
     color: #fff;
     transition: all 0.15s ease;
@@ -45,7 +45,7 @@ a {
     }
     &:active {
         cursor: pointer;
-        box-shadow: 0 2px 2px #bbb;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -57,7 +57,7 @@ a {
     font-weight: 700;
     font-size: 1.1em;
     background: #fff;
-    box-shadow: 0 4px 10px #bbb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     outline: none;
     color: #fff;
     transition: all 0.15s ease;
@@ -67,16 +67,43 @@ a {
     justify-content: center;
     &:hover {
         cursor: pointer;
-        box-shadow: 0 2px 2px #bbb;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     }
     &:active {
         cursor: pointer;
-        box-shadow: 0 2px 2px #bbb;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     }
     img {
         width: 50%;
         margin-top: -1px;
         margin-left: 3px;
+    }
+}
+
+.buttonTres {
+    padding: 12px 30px;
+    border-radius: 100px;
+    width: 250px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.8em;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+    color: #00af00;
+    transition: all 0.1s ease;
+    text-align: center;
+    margin-top: $margen;
+    &:first-child{
+        margin-top: 100px;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    &:active {
+        cursor: pointer;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -398,7 +425,7 @@ body {
                     align-items: flex-start;
                     padding: $margen;
                     .adiciones {
-                        flex: 65% 0 1;
+                        flex: 60% 0 1;
                         margin: 0;
                         h1 {
                             margin-top: 0;
@@ -476,7 +503,7 @@ body {
                         }
                     }
                     .acciones {
-                        flex: 35% 0 1;
+                        flex: 40% 0 1;
                         margin: 0;
                         margin-left: $margen;
                         display: flex;
@@ -671,6 +698,26 @@ body {
         }
         .grande {
             height: 90vh;
+        }
+    }
+    .finalizado{
+        background: #00af00;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 6em;
+            color: #fff;
+            font-weight: 900;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+        h2{
+            font-size: 3em;
+            font-weight: 400;
+            color: #fff;
         }
     }
 }

@@ -32,7 +32,7 @@ a {
   font-weight: 700;
   font-size: 1.1em;
   background: #fff;
-  box-shadow: 0 4px 10px #bbb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   outline: none;
   color: #fff;
   transition: all 0.15s ease;
@@ -44,7 +44,7 @@ a {
 
 .button:active {
   cursor: pointer;
-  box-shadow: 0 2px 2px #bbb;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .buttonDos {
@@ -55,7 +55,7 @@ a {
   font-weight: 700;
   font-size: 1.1em;
   background: #fff;
-  box-shadow: 0 4px 10px #bbb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   outline: none;
   color: #fff;
   transition: all 0.15s ease;
@@ -67,18 +67,48 @@ a {
 
 .buttonDos:hover {
   cursor: pointer;
-  box-shadow: 0 2px 2px #bbb;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .buttonDos:active {
   cursor: pointer;
-  box-shadow: 0 2px 2px #bbb;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .buttonDos img {
   width: 50%;
   margin-top: -1px;
   margin-left: 3px;
+}
+
+.buttonTres {
+  padding: 12px 30px;
+  border-radius: 100px;
+  width: 250px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.8em;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+  color: #00af00;
+  transition: all 0.1s ease;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttonTres:first-child {
+  margin-top: 100px;
+}
+
+.buttonTres:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buttonTres:active {
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -454,7 +484,7 @@ body .app .content .pedido .contenido {
 }
 
 body .app .content .pedido .contenido .adiciones {
-  flex: 65% 0 1;
+  flex: 60% 0 1;
   margin: 0;
 }
 
@@ -544,7 +574,7 @@ body .app .content .pedido .contenido .adiciones .opciones ul li label .check:af
 }
 
 body .app .content .pedido .contenido .acciones {
-  flex: 35% 0 1;
+  flex: 40% 0 1;
   margin: 0;
   margin-left: 15px;
   display: flex;
@@ -755,6 +785,29 @@ body .app .content .pedido .opcionesCombo article .opciones ul li label .check:a
 
 body .app .grande {
   height: 90vh;
+}
+
+body .finalizado {
+  background: #00af00;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body .finalizado h1 {
+  font-size: 6em;
+  color: #fff;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+body .finalizado h2 {
+  font-size: 3em;
+  font-weight: 400;
+  color: #fff;
 }
 
 @media screen and (width: 500px) {
